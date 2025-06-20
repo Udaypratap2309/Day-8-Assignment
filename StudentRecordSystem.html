@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenr Record System</title>
+</head>
+<body>
+    <script>
+        let student = {
+  name: "Riya",
+  age: 17,
+  grade: "B",
+  subjects: ["Math", "English"],
+
+  addSubject: function(newSubject) {
+    this.subjects.push(newSubject);
+  },
+
+  updateGrade: function(newGrade) {
+    this.grade = newGrade;
+  },
+
+  displayInfo: function() {
+    console.log(`Name: ${this.name}`);
+    console.log(`Age: ${this.age}`);
+    console.log(`Grade: ${this.grade}`);
+    console.log(`Subjects: ${this.subjects.join(", ")}`);
+  }
+};
+
+// Example usage:
+student.addSubject("Science");
+student.updateGrade("A");
+student.displayInfo();
+
+    </script>
+</body>
+</html>
